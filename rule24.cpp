@@ -77,20 +77,27 @@ int main()
         ~Widget()
         ~Widget()
     */
-    efficientAddOrUpdate(m, 2, 1.3);
+    // efficientAddOrUpdate(m, 2, 1.3);
     /*
     output:
         Widget(double)
         ~Widget()
         ~Widget()
     */
-    efficientAddOrUpdate(m, 2, 1.9);
+    // efficientAddOrUpdate(m, 2, 1.9);
     /*
     output:
         Widget(double)
         ~Widget()
         Widget(double)
         ~Widget()
+        ~Widget()
+    */
+    // V4 C++11 emplace
+    m.emplace(3, 1.45);
+    /*
+        output:
+        Widget(double)
         ~Widget()
     */
     return 0;

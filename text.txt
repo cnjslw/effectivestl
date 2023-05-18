@@ -1,0 +1,5 @@
+`istream_iterator` 使用`operator>>`从输入流中读取单个字符
+`istreambuf_iterator`使用`operator>>`从流的缓冲区中读取下一个字符
+非格式化输入输出应该考虑使用`istreambuf_iterator`、`ostreambuf_iterator`
+
+试 一 试 吧 ！ 
